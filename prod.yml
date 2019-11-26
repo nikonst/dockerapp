@@ -1,0 +1,10 @@
+version: "3.0"
+services:
+  dockerapp:
+    image: nikonst/dockerhub:0789fe7d716711510ae4c45d3e2531f66812379a
+    ports:
+      - "5000:5000"
+    depends_on:
+      - redis
+  redis:
+    image: redis:3.2.0
