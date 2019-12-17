@@ -1,7 +1,7 @@
 version: "3.0"
 services:
   dockerapp:
-    image: nikonst/dockerapp
+    image: nikonst/dockerapp:latest
     ports:
       - "5000:5000"
     depends_on:
